@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Pomodoro Timer",
+  "version": "1.0.0",
+  "description": "Helps you get more done by dividing time into chunks of 25 mins of work and 5 mins of break. You can also customise these according to your needs",
+  "icons": {
+    "16": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
+  "action": {
+    "default_icon": "assets/icon.png",
+    "default_title": "Pomodoro Timer",
+    "default_popup": "popup/index.html"
+  },
+  "permissions": ["storage", "alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options/index.html"
+}
